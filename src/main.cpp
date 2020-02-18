@@ -1,6 +1,8 @@
-#include "gtest/gtest.h"
 #include "Automata.h"
-TEST(lab4,task)
+#include <iostream>
+using namespace std;
+
+int main()
 {
 	Automata *a = new Automata();
 	a->on();
@@ -8,6 +10,6 @@ TEST(lab4,task)
 	cout << endl;
 	a->coin(50);
 	a->choise(1);
-	a->printCash();
-	EXPECT_EQ(5,a->printCash());
+	a->printCash();//проверка, правильно ли считает прибыль
+	getchar();
 }
