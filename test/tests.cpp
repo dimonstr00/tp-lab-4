@@ -1,11 +1,12 @@
 #include "gtest/gtest.h"
 #include "Automata.h"
+#include <iostream>
+using namespace std;
 TEST(lab4,task)
 {
 	Automata *a = new Automata();
 	a->on();
 	a->printMenu();
-	cout << endl;
 	a->coin(50);
 	a->choise(1);
 	a->printCash();
